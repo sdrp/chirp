@@ -1,9 +1,20 @@
 README
 
+
+Description
+-----------
 This is the first draft of a sentiment visualizer using the Twitter API.
 The script scrapes tweets based on the input user name and plots
 their sentiment as a time series. Still in Version 0.1.
 
+
+Dependencies
+------------
+Twitter API, TextBlob, matplotlib, numpy
+
+
+How to Use
+----------
 From the command line type:
 >> python scraper.py [twitter user name] [# of tweets up to 200]
 
