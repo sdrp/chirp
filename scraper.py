@@ -6,13 +6,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.dates as mdates
 
-print plt.style.available
-plt.style.use('ggplot')
-
-## TODO: update the style on matplotlib to "fivethiryeight"
-# make sure version is above 1.4
-# or try to make ggplot work
-
 
 ## Scrapes Tweets using Twitter API and performs sentiment analysis
 ## Uses packages python-twitter and TextBlob
@@ -84,6 +77,10 @@ def avg_by_day(dates, polarities):
 
 (date_array, polarities_array) = avg_by_day(date_array, polarities_array)
 
+
+# Set the plot style
+plt.style.use('ggplot')
+
 # Configure matplotlib settings
 fig = plt.figure()
 output_plot = fig.add_subplot(111)
@@ -96,8 +93,3 @@ output_plot.tick_params(axis='both', which='major', labelsize=7)
 output_plot.plot(date_array,polarities_array)
 
 plt.show()
-
-# start_date = datetime.datetime(2000, 1, 1)
-# end_date = datetime.datetime(2016, 12, 31)
-# stock_data = web.DataReader('TSLA', 'yahoo', start_date, end_date)
-# print stock_data.head

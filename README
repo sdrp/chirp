@@ -20,3 +20,10 @@ From the command line type:
 
 Ex.
 >> python scraper.py BarackObama 200
+
+Disclaimer
+----------
+Please generate your own access tokens for the API before using this script
+so Twitter doesn't get mad at me. You can get one for free here:
+https://dev.twitter.com/oauth/overview/application-owner-access-tokens
+Then again, it's not like I can stop you at this point. 
