@@ -10,10 +10,10 @@ import matplotlib.dates as mdates
 ## Scrapes Tweets using Twitter API and performs sentiment analysis
 ## Uses packages python-twitter and TextBlob
 
-api = twitter.Api(consumer_key='MN9DU1P8doErgFPCBsbATbonk',
-                      consumer_secret='mDxQSkJqedmrvRYCY5uPPxCbbGm7vrG9p5jg6M4pZR4TjJezd9',
-                      access_token_key='900731370762379265-AiRKKS9HELTZE7EuIMEhCBj4c98TL2v',
-                      access_token_secret='FKZFESWMM24EYjOmudejT9jXpCL0KiLp32jeSTs3uEEfb')
+api = twitter.Api(consumer_key='insert your consumer key here',
+                      consumer_secret='insert your consumer secret here',
+                      access_token_key='insert your access token here',
+                      access_token_secret='inssert your access token secret here')
 
 
 
